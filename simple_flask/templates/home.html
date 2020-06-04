@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>License Plate Recognition</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/style.css" type="text/css">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Motorbike License Plate Recognition Machine</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        This website template is adapted from CoderSchool's teaching material
+      </span>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+
+    <div class="classify">
+      <div>
+        <h2>
+          Hi, Please upload your motorbike license plate here
+        </h2>
+      </div>
+      <div>
+        <form action="/classify" method="post" enctype="multipart/form-data">
+          <div class="file has-name is-centered">
+            <label class="file-label">
+              <input class="file-input" type="file" id="image" name="image">
+            </label>
+          </div>
+          <br>
+          <input type="submit" value="Recognize this plate" class="btn btn-danger" name="image" id="classify_button">
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="/static/script.js"></script>
+</body>
+
+</html>
