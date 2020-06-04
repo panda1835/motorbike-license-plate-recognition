@@ -4,3 +4,4 @@ This is my final project for a coorporated course between Fulbright and Codersch
 The two compressed files are training data, it is used by Training.ipynb.
 
 The website is in the simple flask folder.
+You can find it here: https://phuc-license-plate-recognition.herokuapp.com
